@@ -17,6 +17,7 @@ const User = connection.define( "User", {
     }
   },
   {
+    indexes: [{unique: true, fields: ['username']}],
     indexes: [{unique: true, fields: ['email']}]
   }
 );
